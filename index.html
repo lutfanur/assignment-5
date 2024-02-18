@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flix Bus</title>
+  <!-- daisy ui and tailwind css -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header>
+    <!-- navbar section -->
+    <div class="navbar container flex mx-auto lg:px-24 px-8 my-8">
+      <div class="navbar-start">
+        <div class="">
+          <h2>Flix Bus</h2>
+        </div>
+      </div>
+      <div class="navbar-center lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <button class="btn join-item">Bus <img src="images/bus-icon.png" alt=""></button>
+      </div>
+    </div>
+
+
+
+
+    <div class="hero mx-auto bg-no-repeat m-10 max-w-[1100px] h-[550px] bg-[url(images/banner.png)]">
+      <div class=""></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with FLIX Paribahan</h1>
+          <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated
+            testing features allow for a streamlined .</p>
+          <a class="button-link inline-block px-10 py-6 bg-green-400 rounded-lg  text-decoration-none"
+            href="#Flix-poribohon">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center gap-6">
+      <div class="card card-side bg-base-100 shadow-xl">
+        <figure><img src="images/people.png" alt="Movie" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">500K+</h2>
+          <p>Registered users</p>
+        </div>
+      </div>
+      <div class="card card-side bg-base-100 shadow-xl">
+        <figure><img src="images/ticket-cupon.png" alt="Movie" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">1.7 Lacks</h2>
+          <p>Ticket Sold</p>
+        </div>
+      </div>
+      <div class="card card-side bg-base-100 shadow-xl">
+        <figure><img src="images/stoppage.png" alt="Movie" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">80K+</h2>
+          <p>Rental partners</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="my-24 mx-auto">
+      <!-- coupon section -->
+      <h2 class="text-center text-3xl my-8">Best Offers for You</h2>
+      <div class="flex gap-6 max-w-5xl items-center justify-center text-center">
+        <div class="card card-body grid grid-cols-1 lg:grid-cols-3 bg-yellow-400 justify-center items-center">
+
+          <div>
+            <h2 class="card-title">15% OFF</h2>
+            <p>On your next parchase</p>
+            <p>Use by January 2024</p>
+          </div>
+          <div>
+            <img src="images/cupon-devider.png" alt="">
+          </div>
+          <div class="">
+            <h2>NEW15</h2>
+            <p>Coupon code</p>
+          </div>
+        </div>
+        <!-- 2nd cart -->
+        <div class="card card-body justify-center items-center grid grid-cols-1 lg:grid-cols-3 bg-pink-400 ">
+          <div>
+            <h2 class="card-title">20% OFF</h2>
+            <p>On your next parchase</p>
+            <p>Use by January 2024</p>
+          </div>
+          <div>
+            <img src="images/cupon-devider.png" alt="">
+          </div>
+
+          <div>
+            <h2>Couple 20</h2>
+            <p>Coupon code</p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="text-center"><button class=" mx-auto btn justify-center items-center text-green-600">See All
+          Offers</button></div>
+    </section>
+    <!-- Flix Poribohon -->
+    <section id="Flix-poribohon" class="my-24 mx-auto">
+
+      <h2 class="text-center text-3xl pb-6">Flix Paribahan</h2>
+      <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated
+        <br>testing features
+        allow for a streamlined .
+      </p>
+      <div class="container grid grid-cols-1 mx-auto lg:px-24 px-8 my-8">
+
+        <div class="flex text-center justify-center">
+          <div>
+            <div class="flex space-x-20 py-8 justify-center">
+              <div class="flex text-center justify-center items-center">
+                <img src="images/bus-logo.png" alt="">
+                <div>
+                  <h2 class="text-xl font-bold">Greenline Paribahan</h2>
+                  <p class="text-sm">Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div>
+                <button class="join join-item"><img src="images/seat-green.png" alt="">8 Seats left </button>
+
+              </div>
+
+            </div>
+            <div class="bg-base-200">
+              <label class="input input-bordered flex items-center gap-2">
+                <input type="text" class="grow" placeholder="Route" />
+                <span class="badge badge-info">Dhaka-Sylhet</span>
+              </label>
+              <hr class="dashed">
+              <label class="input input-bordered flex items-center gap-2">
+                <input type="text" class="grow" placeholder="Departure Time" />
+                <span class="badge badge-info">9.00 PM</span>
+              </label>
+              <label class="input input-bordered flex items-center gap-2">
+                <input type="text" class="grow" placeholder="Search" />
+                <span class="badge badge-info">Dhaka-Sylhet</span>
+              </label>
+            </div>
+
+
+          </div>
+
+          <div class="px-8 py-20">
+            <img src="images/fare.png" alt="">
+            <p class="text-2xl font-bold">550 Taka</p>
+            <p>Per Seat</p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- seats section -->
+    <section class="my-24 mx-auto">
+      <div class="lg:px-24 px-8 py-8
+      
+      space-x-24 grid grid-cols-1 grid-cols-3">
+
+        <div class="pl-24 ml-12">
+          <h3 class="text-center text-3xl pb-8 font-bold"> Select Your Seat</h3>
+          <div class="flex gap-28 text-center items-center justify-center">
+            <div class="flex">
+              <button><img src="images/seat-gray.png" alt=""></button>
+              <p>Available</p>
+            </div>
+            <div class="flex">
+              <button><img src="images/seat-green-filled.png" alt=""></button>
+              <p class="bg-[#1DD100">Selected</p>
+            </div>
+          </div>
+          <div class="flex justify-end"><button class="btn pb-8 p-4 px-6 py-2 bg-gray-200 rounded-lg"><img
+                src="images/wheel.svg" alt=""></button></div>
+          <div class=" flex space-x-6 space-y-6">
+            <button id="btn" class="btn px-10 py-6 bg-gray-200 rounded-lg">A1
+            </button>
+            <button id="btn" class="btn inline-block px-10 py-6 bg-gray-200 rounded-lg">A2
+            </button>
+            <button id="btn" class="btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">A3</button>
+            <button id="btn" class="btn inline-block px-10 py-6 bg-gray-200 rounded-lg">A4</button>
+          </div>
+          <div class=" flex space-x-4 space-y-6">
+            <button id="btn" class="btn inline-block px-10 py-6 bg-gray-200 rounded-lg">B1</button>
+            <button id="btn" class="btn inline-block px-10 py-6 bg-gray-200 rounded-lg">B2</button>
+            <button id="btn" class="btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">B3</button>
+            <button id="btn" class="btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">B4</button>
+
+
+          </div>
+
+        </div>
+
+        <div class="pl-24 pr-0 space-x-4">
+          <h3 class="text-center text-3xl pb-8 font-bold">Select Your Seat</h3>
+          <div class="">
+            <table class="table">
+              <!-- head -->
+              <thead>
+                <tr class="text-xl font-lg">
+
+                  <th>Seat <span class="bg-[#1DD100]">0</span></th>
+                  <th>Class</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <td></td>
+                  <td>Economy</td>
+                  <td><span>550</span></td>
+                </tr>
+                <!-- row 2 -->
+                <tr>
+                  <td></td>
+                  <td>Economy</td>
+                  <td>550</td>
+                </tr>
+
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="text-xl font-lg" colspan="2">Total Price: BDT <span>0</span></td>
+                </tr>
+              </tfoot>
+
+            </table>
+          </div>
+          <div class="join w-96">
+            <input class="input input-bordered join-item" placeholder="Have Any Coupon" />
+            <button class="btn w-fit join-item bg-[#1DD100] rounded">Apply</button><br><br>
+          </div>
+          <div class="flex space-x-20">
+            <p class="text-xl font-lg">Grand Total</p><span class="text-xl font-lg"></span>0</span>
+          </div>
+
+          <div>
+            <label class="text-2xl font-bold" for="">Pessenger Name</label><br><br>
+            <input type="text" placeholder="Enter Your Name" class="input input-bordered input-primary w-full max-w-xs">
+          </div>
+          <div>
+            <label class="text-2xl font-bold" for="">Phone Number</label><br><br>
+            <input type="number" placeholder="Enter Your Phone Number"
+              class="input input-bordered input-primary w-full max-w-xs">
+          </div>
+          <div>
+            <label class="text-2xl font-bold" for="">Email Id</label><br><br>
+            <input type="email" placeholder="Enter Your Email Id"
+              class="input input-bordered input-primary w-full max-w-xs"><br>
+          </div><br>
+          <button class="btn w-96 bg-[#1DD100]">Next</button><br>
+          <div class="flex space-x-16">
+            <p>Terms and Conditions</p>
+            <p>Collection Policy</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- <div class="">
+  <div>
+
+    
+    <div class=" ">
+      
+    </div>
+    <div>
+      
+    <div>
+      
+    </div>
+    <div class="flex text-center items-center justify-center">
+      
+    </div>
+  </div>
+</div>
+<div>
+  
+  <hr class="dotted">
+  <div class="border-8 bg-gray-200">
+    <div class="text-center border-1 max-w-96 mx-auto justify-center items-center">
+      <div class="flex text-xl font-lg mx-auto space-x-16">
+        <p>Seat <span>0</span></p>
+        <p>Class</p>
+        <P>Price</P>
+      </div>
+      <div class="flex space-x-20">
+        <p>C2</p>
+        <p>Economy</p>
+        <P>550</P>
+      </div>
+      <div class="flex space-x-20">
+        <p>C2</p>
+        <p>Economy</p>
+        <P>550</P>
+      </div>
+      <div class="flex space-x-24">
+        <p>Total Price</p>
+        <p>1100</p>
+      </div>
+      <hr>
+
+      
+
+
+    </div>
+    <br>
+   
+  </div>
+</div>
+
+
+</div> -->
