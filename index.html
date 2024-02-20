@@ -17,7 +17,7 @@
     <div class="navbar container flex mx-auto lg:px-24 px-8 my-8">
       <div class="navbar-start">
         <div class="">
-          <h2>Flix Bus</h2>
+          <h2>P-Ticket </h2>
         </div>
       </div>
       <div class="navbar-center lg:flex">
@@ -32,23 +32,24 @@
         <button class="btn join-item">Bus <img src="images/bus-icon.png" alt=""></button>
       </div>
     </div>
-
-
-
-
-    <div class="hero mx-auto bg-no-repeat m-10 max-w-[1100px] h-[550px] bg-[url(images/banner.png)]">
+    <!-- navber end -->
+    <!-- banner start -->
+    <div class="hero mx-auto bg-no-repeat max-w-[1100px] h-[550px] bg-[url(images/banner.png)]">
       <div class=""></div>
       <div class="hero-content text-center text-neutral-content">
-        <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with FLIX Paribahan</h1>
-          <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated
+        <div class="max-w-md space-y-8">
+          <h1 class="mb-5 text-5xl font-bold pb-4">End-to-End Travel with
+            <br> <span class="bg-[#1DD100] pb-4">P Paribahan</span>
+          </h1>
+          <p class="mb-5 text-sm">Yes, you can run unit tests and view the results directly within the app. The
+            integrated
             testing features allow for a streamlined .</p>
-          <a class="button-link inline-block px-10 py-6 bg-green-400 rounded-lg  text-decoration-none"
-            href="#Flix-poribohon">Buy Tickets</a>
+          <a class="button-link inline-block px-10 py-6 bg-[#1DD100] rounded-lg" href="#Flix-poribohon">Buy Tickets</a>
         </div>
       </div>
     </div>
-    <div class="flex justify-center items-center gap-6">
+    <!-- 3 cards -->
+    <div class="flex gap-6 pl-48 mx-auto -translate-y-16 translate-x-96 ">
       <div class="card card-side bg-base-100 shadow-xl">
         <figure><img src="images/people.png" alt="Movie" /></figure>
         <div class="card-body">
@@ -84,7 +85,7 @@
             <p>On your next parchase</p>
             <p>Use by January 2024</p>
           </div>
-    
+
           <div>
             <img src="images/cupon-devider.png" alt="">
           </div>
@@ -116,16 +117,16 @@
           Offers</button></div>
     </section>
     <!-- Flix Poribohon -->
-    <section id="Flix-poribohon" class="my-24 mx-auto">
+    <section id="P-poribohon" class="my-24 mx-auto">
 
-      <h2 class="text-center text-3xl pb-6">Flix Paribahan</h2>
+      <h2 class="text-center text-3xl pb-6">P Paribahan</h2>
       <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated
         <br>testing features
         allow for a streamlined .
       </p>
       <div class="container grid grid-cols-1 mx-auto lg:px-24 px-8 my-8">
 
-        <div class="flex text-center justify-center">
+        <div class="flex space-between justify-center">
           <div>
             <div class="flex space-x-20 py-8 justify-center">
               <div class="flex text-center justify-center items-center">
@@ -136,31 +137,33 @@
                 </div>
               </div>
               <div>
-                <button class="join join-item"><img src="images/seat-green.png" alt="">8 Seats left </button>
+                <button class="join join-item"><img src="images/seat-green.png" alt=""><span class="text-[#1DD100]">8
+                    Seats Left</span> </button>
 
               </div>
 
             </div>
-            <div class="bg-base-200">
-              <label class="input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Route" />
-                <span class="badge badge-info">Dhaka-Sylhet</span>
-              </label>
-              <hr class="dashed">
-              <label class="input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Departure Time" />
-                <span class="badge badge-info">9.00 PM</span>
-              </label>
-              <label class="input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Search" />
-                <span class="badge badge-info">Dhaka-Sylhet</span>
-              </label>
+            <div class="bg-gray-200 space-y-8 border-2">
+              <div class="flex gap-28 space-x-96 pt-4">
+                <p>Route</p>
+                <p>Dhaka-Sylhet</p>
+              </div>
+              <div class="flex gap-28 space-x-96">
+                <p>Departure-Time</p>
+                <p>9.00</p>
+              </div>
+              <div class="flex gap-28 space-between pb-4">
+                <h3>Boarding Point-Laximpur</h3>
+                <h3> Dropping Point - Bogura</h3>
+                <h3>Est. Time - 11 Hour</h3>
+              </div>
+
             </div>
 
 
           </div>
 
-          <div class="px-8 py-20">
+          <div class="px-8 py-20 pt-32 text-center">
             <img src="images/fare.png" alt="">
             <p class="text-2xl font-bold">550 Taka</p>
             <p>Per Seat</p>
@@ -191,55 +194,51 @@
           </div>
           <div class="flex justify-end"><button class="btn pb-8 px-6 py-2 bg-gray-200 rounded-lg"><img
                 src="images/wheel.svg" alt=""></button></div>
-          <div class=" flex space-x-8 space-y-6">
-            <button class="all-btn btn mt-6 px-10 py-6 bg-gray-200 rounded-lg">A1
-            </button>
-            <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg">A2
-            </button>
-            <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">A3</button>
-            <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg">A4</button>
-          </div>
-          <div class=" flex space-x-8 space-y-6">
-            <button class="all-btn btn mt-6 inline-block px-10 py-6 bg-gray-200 rounded-lg">B1</button>
-            <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg">B2</button>
-            <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">B3</button>
-            <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">B4</button>
-
-
+          <div id="seat-numbers">
+            <div class=" flex space-x-8 space-y-6">
+              <button class="all-btn btn mt-6 px-10 py-6 bg-gray-200 rounded-lg">A1
+              </button>
+              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg">A2
+              </button>
+              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">A3</button>
+              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg">A4</button>
+            </div>
+            <div class=" flex space-x-8 space-y-6">
+              <button class="all-btn btn mt-6 inline-block px-10 py-6 bg-gray-200 rounded-lg">B1</button>
+              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg">B2</button>
+              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">B3</button>
+              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">B4</button>
+  
+  
+            </div>
           </div>
 
         </div>
 
         <div class="pl-24 pr-0 space-x-4">
           <h3 class="text-center text-3xl pb-8 font-bold">Select Your Seat</h3>
-          <div id="seat-container" >
-              <div id="" class="flex text-xl font-lg mx-auto space-x-20 px-8 ">
-                <p>Seat <span id ="seat-count" class="bg-[#1DD100]">0</span></p>
-                <p>Class</p>
-                <P>Price</P>
-              </div>
-              <hr>
-              <div class="flex space-x-24 pb-4 px-10">
-                <p>A1</p>
-                <p>Economy</p>
-                <P><span>550</span></P>
-              </div>
-              <div class="flex space-x-24 pb-4 px-10">
-                <p>A2</p>
-                <p>Economy</p>
-                <P>550</P>
-              </div>
-              <hr>
-              <div class="flex text-xl font-lg space-x-24 pb-4 px-8">
-                <ul id="seat-booking" class="style:">
+          <div id="seat-container space-between border-4 bg-[#030712]">
+            <div id="" class="flex text-xl font-lg mx-auto space-x-20 px-8 ">
+              <p>Seat<span id="seat-count" class="bg-[#1DD100] rounded-full">0</span></p>
+              <p>Class</p>
+              <P>Fare</P>
+            </div>
+            <hr>
+            <div class="flex space-x-24 space-y-8 px-10">
+              <p class="pt-8">A1</p>
+              <p>Economy</p>
+              <P><span>550</span></P>
+            </div>
+            <div class="flex text-xl font-lg space-x-24 pb-4 px-8">
+              <ul id="seat-booking" class="style:">
 
-                </ul>
+              </ul>
 
-              </div>
-              <div class="flex text-xl font-lg space-x-24 pb-4 px-8">
-                <p>Total Price</p>
-                <p>1100</p>
-              </div>
+            </div>
+            <div class="flex text-xl font-lg space-x-24 pb-4 px-8">
+              <p>Total Price</p>
+              <p><span id="total-price">0</span></p>
+            </div>
 
           </div>
           <div class="join w-96">
@@ -247,7 +246,8 @@
             <button class="btn w-fit join-item bg-[#1DD100] rounded">Apply</button><br><br>
           </div>
           <div class="flex space-x-20">
-            <p class="text-xl font-lg">Grand Total</p><span class="text-xl font-lg">1100</span>
+            <p class="text-xl font-lg">Grand Total</p><span class="text-xl font-lg"><span
+                id="grand-total">0</span></span>
           </div>
 
           <div>
@@ -265,6 +265,7 @@
               class="input input-bordered input-primary w-full max-w-xs"><br>
           </div><br>
           <button class="btn w-96 px-8 bg-[#1DD100]">Next</button><br>
+
           <div class="flex space-x-16">
             <p>Terms and Conditions</p>
             <p>Collection Policy</p>
@@ -279,92 +280,28 @@
 
   </main>
   <footer>
+    <!-- footer section -->
+    <footer class="footer p-10 bg-neutral text-neutral-content border-2 w-11/12 ml-24 mr-24 pt-16">
+      <nav>
+        <h6 class="footer-title">Flix-Ticket</h6>
+        <p>P-Ticket
+          P-Ticket is a digital platform to make your daily commuting better.</p>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <hr>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+  </footer>
 
   </footer>
   <script src="script.js"></script>
 </body>
 
 </html>
-<!-- <div class="">
-  <div>
-
-    
-    <div class=" ">
-      
-    </div>
-    <div>
-      
-    <div>
-      
-    </div>
-    <div class="flex text-center items-center justify-center">
-      
-    </div>
-  </div>
-</div>
-<div>
-  
-  <hr class="dotted">
-  <div class="border-8 bg-gray-200">
-    <div class="text-center border-1 max-w-96 mx-auto justify-center items-center">
-      <div class="flex text-xl font-lg mx-auto space-x-16">
-        <p>Seat <span>0</span></p>
-        <p>Class</p>
-        <P>Price</P>
-      </div>
-      <div class="flex space-x-20">
-        <p>C2</p>
-        <p>Economy</p>
-        <P>550</P>
-      </div>
-      <div class="flex space-x-20">
-        <p>C2</p>
-        <p>Economy</p>
-        <P>550</P>
-      </div>
-      <div class="flex space-x-24">
-        <p>Total Price</p>
-        <p>1100</p>
-      </div>
-      <hr>
-
-      
-
-
-    </div>
-    <br>
-   
-  </div>
-</div>
-
-              <thead>
-                <tr class="text-xl font-lg">
-
-                  <th id="">Seat <span id="seat-count" class="bg-[#1DD100]">0</span></th>
-                  <th>Class</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody id="seat-booking">  
-                
-                 <tr>
-                  <td id="">A1</td>
-                  <td>Economy</td>
-                  <td><span id="seat-price">550</span></td>
-                </tr>
-                
-                 <tr>
-                  <td id="">B1</td>
-                  <td>Economy</td>
-                  <td><span>550</span></td>
-                </tr>
-
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td class="text-xl font-lg" colspan="2">Total Price: BDT <span id="totalPrice">1100</span></td>
-                </tr>
-              </tfoot>
-
-
-</div> -->

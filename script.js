@@ -1,5 +1,5 @@
 const allBtn = document.getElementsByClassName('all-btn');
-// console.log(allBtn);
+console.log(allBtn.classlist);
 let count = 0;
 
 for (const btn of allBtn) {
@@ -20,7 +20,7 @@ for (const btn of allBtn) {
         // setInnerText('seat-booking)
 
         const p = document.createElement('p');
-        p.innerText = btn;
+        p.innerText = btn ;
         const p1 = document.createElement('p');
         p1.innerText = className;
         const p2 = document.createElement('p');
@@ -33,7 +33,9 @@ for (const btn of allBtn) {
 
         seatBooking.appendChild(li);
 
-        seatContainer.appendChild
+        // seatContainer.appendChild(seatBooking);
+
+        const totalPrice = document.getElementById('total-price').innerText;
 
 
 
