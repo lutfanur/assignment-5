@@ -34,7 +34,7 @@
     </div>
     <!-- navber end -->
     <!-- banner start -->
-    <div class="hero mx-auto bg-no-repeat max-w-[1100px] h-[550px] bg-[url(images/banner.png)]">
+    <div class="hero mx-auto bg-no-repeat lg:px-24 px-8 my-8 max-w-[1100px] h-[550px] bg-[url(images/banner.png)]">
       <div class=""></div>
       <div class="hero-content text-center text-neutral-content">
         <div class="max-w-md space-y-8">
@@ -74,6 +74,7 @@
     </div>
   </header>
   <main>
+    <!-- best offer section -->
     <section class="my-24 mx-auto">
       <!-- coupon section -->
       <h2 class="text-center text-3xl my-8">Best Offers for You</h2>
@@ -81,7 +82,7 @@
         <div class="card card-body grid grid-cols-1 lg:grid-cols-3 bg-yellow-400 justify-center items-center">
 
           <div>
-            <h2 class="card-title">15% OFF</h2>
+            <h2 class="card-title text-xl font-bold">15% OFF</h2>
             <p>On your next parchase</p>
             <p>Use by January 2024</p>
           </div>
@@ -89,15 +90,16 @@
           <div>
             <img src="images/cupon-devider.png" alt="">
           </div>
-          <div class="">
-            <h2>NEW15</h2>
+          <div id="new15">
+            <h2><span class="text-3xl font-bold">NEW</span><span class="text-sm font-bold">15</span>
+            </h2>
             <p>Coupon code</p>
           </div>
         </div>
         <!-- 2nd cart -->
         <div class="card card-body justify-center items-center grid grid-cols-1 lg:grid-cols-3 bg-pink-400 ">
           <div>
-            <h2 class="card-title">20% OFF</h2>
+            <h2 class="card-title text-xl font-bold">20% OFF</h2>
             <p>On your next parchase</p>
             <p>Use by January 2024</p>
           </div>
@@ -106,7 +108,7 @@
           </div>
 
           <div>
-            <h2>Couple 20</h2>
+            <h2 id="couple20" class="text-xl font-bold">Couple 20</h2>
             <p>Coupon code</p>
           </div>
         </div>
@@ -137,7 +139,8 @@
                 </div>
               </div>
               <div>
-                <button class="join join-item"><img src="images/seat-green.png" alt=""><span class="text-[#1DD100]">8
+                <button class="join join-item"><img src="images/seat-green.png" alt=""><span
+                    class="text-[#1DD100]"><span id="total-seat">8</span>
                     Seats Left</span> </button>
 
               </div>
@@ -175,6 +178,8 @@
 
     </section>
     <!-- seats section -->
+
+    <!-- select seat 1st part -->
     <section class="my-24 mx-auto">
       <div class="lg:px-24 px-8 py-8
       
@@ -192,60 +197,65 @@
               <p class="bg-[#1DD100">Selected</p>
             </div>
           </div>
-          <div class="flex justify-end"><button class="btn pb-8 px-6 py-2 bg-gray-200 rounded-lg"><img
+          <div class="flex justify-end pr-12"><button class="btn pb-8 px-6 py-2 bg-gray-200 rounded-lg"><img
                 src="images/wheel.svg" alt=""></button></div>
           <div id="seat-numbers">
             <div class=" flex space-x-8 space-y-6">
-              <button class="all-btn btn mt-6 px-10 py-6 bg-gray-200 rounded-lg">A1
+              <button id="get-seat" class="all-btn btn mt-6 px-10 py-6 bg-gray-200 rounded-lg">A1
               </button>
-              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg">A2
+              <button class="all-btn btn px-10 py-6 bg-gray-200 rounded-lg">A2
               </button>
-              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">A3</button>
-              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg">A4</button>
+              <button class="all-btn btn px-10 py-6 bg-gray-200 rounded-lg ">A3</button>
+              <button class="all-btn btn px-10 py-6 bg-gray-200 rounded-lg">A4</button>
             </div>
             <div class=" flex space-x-8 space-y-6">
-              <button class="all-btn btn mt-6 inline-block px-10 py-6 bg-gray-200 rounded-lg">B1</button>
-              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg">B2</button>
-              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">B3</button>
-              <button class="all-btn btn inline-block px-10 py-6 bg-gray-200 rounded-lg ">B4</button>
-  
-  
+              <button class="all-btn btn mt-6 px-10 py-6 bg-gray-200 rounded-lg">B1</button>
+              <button class="all-btn btn px-10 py-6 bg-gray-200 rounded-lg">B2</button>
+              <button class="all-btn btn px-10 py-6 bg-gray-200 rounded-lg ">B3</button>
+              <button class="all-btn btn px-10 py-6 bg-gray-200 rounded-lg ">B4</button>
+
+
             </div>
           </div>
 
         </div>
-
+            <!-- select seat 2nd part -->
         <div class="pl-24 pr-0 space-x-4">
           <h3 class="text-center text-3xl pb-8 font-bold">Select Your Seat</h3>
-          <div id="seat-container space-between border-4 bg-[#030712]">
+          <div id="seat-container" class=" bg-gray-50">
             <div id="" class="flex text-xl font-lg mx-auto space-x-20 px-8 ">
-              <p>Seat<span id="seat-count" class="bg-[#1DD100] rounded-full">0</span></p>
+              <p>Seat<span id="seat-count" class="bg-[#1DD100] rounded-full"><span id="">0</span></span></p>
               <p>Class</p>
-              <P>Fare</P>
+              <P>Price</P>
             </div>
-            <hr>
-            <div class="flex space-x-24 space-y-8 px-10">
-              <p class="pt-8">A1</p>
+            <hr />
+            <div class="flex justify-evenly hidden">
+              <p id="given-seat" class="pt-8">A1</p>
               <p>Economy</p>
               <P><span>550</span></P>
             </div>
-            <div class="flex text-xl font-lg space-x-24 pb-4 px-8">
-              <ul id="seat-booking" class="style:">
+            <div class="flex justify-evenly hidden">
+              <p id="given-seat" class="pt-8">A1</p>
+              <p>Economy</p>
+              <P><span>550</span></P>
+            </div>
+            <br>
 
-              </ul>
+            <div id="seat-booking" class="flex text-xl font-lg space-x-24 pb-4 px-8">
 
             </div>
-            <div class="flex text-xl font-lg space-x-24 pb-4 px-8">
+            <hr />
+            <div class="flex text-xl font-lg space-x-24 pb-4 px-8 bg-base-50">
               <p>Total Price</p>
               <p><span id="total-price">0</span></p>
             </div>
 
           </div>
-          <div class="join w-96">
-            <input class="input input-bordered join-item" placeholder="Have Any Coupon" />
-            <button class="btn w-fit join-item bg-[#1DD100] rounded">Apply</button><br><br>
+          <div class="join w-96 bg-base-50">
+            <input id="coupon-code" class="input input-bordered join-item" placeholder="Have Any Coupon" />
+            <button onclick="updateGrandTotal('apply-btn')" id="apply-btn" class="btn w-fit join-item bg-[#1DD100] rounded">Apply</button><br><br>
           </div>
-          <div class="flex space-x-20">
+          <div class="flex space-x-20 bg-base-50">
             <p class="text-xl font-lg">Grand Total</p><span class="text-xl font-lg"><span
                 id="grand-total">0</span></span>
           </div>
@@ -264,7 +274,8 @@
             <input type="email" placeholder="Enter Your Email Id"
               class="input input-bordered input-primary w-full max-w-xs"><br>
           </div><br>
-          <button class="btn w-96 px-8 bg-[#1DD100]">Next</button><br>
+          <button class="btn w-80 px-8 bg-[#1DD100]">Next</button>
+          <br>
 
           <div class="flex space-x-16">
             <p>Terms and Conditions</p>
