@@ -7,23 +7,22 @@ for (const btn of allBtn) {
         const seatCount = getConvertedValue('seat-count');
         document.getElementById('seat-count').innerText = seatCount + 1;
 
-        const totalSeat = getConvertedValue('total-seat');
-        document.getElementById('total-seat').innerText = totalSeat - 1;
-
-
-
         const seatName = event.target.innerText;
         const className = event.target.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes[3].childNodes[5].childNodes[3].innerText;
         const price = event.target.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes[3].childNodes[5].childNodes[5].innerText;
-        console.log();
-
-
-        // const totalSeat = document.getElementById('total-seat').innerText;
-
-        // document.getElementById('total-seat').innerText = totalSeat - 1;
-        const seatContainer = document.getElementById('seat-container')
+        
 
         const seatBooking = document.getElementById('seat-booking');
+
+
+        const firstSeatCount = getConvertedValue('seat-count');
+        if(firstSeatCount + 1 > 4){
+            alert('only for 4 seats');
+            return;
+        }
+
+        const totalSeat = getConvertedValue('total-seat');
+        document.getElementById('total-seat').innerText = totalSeat - 1;
 
 
         const div = document.createElement('div');
@@ -51,9 +50,6 @@ for (const btn of allBtn) {
 
         updateTotalPrice(price);
         updateGrandTotal();
-
-
-        // const totalPrice = document.getElementById('total-price').innerText;
 
 
 
