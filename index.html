@@ -12,12 +12,12 @@
 </head>
 
 <body>
-  <header>
+  <header id="header-section">
     <!-- navbar section -->
     <div class="navbar container flex mx-auto lg:px-24 px-8 my-8">
       <div class="navbar-start">
         <div class="">
-          <h2>P-Ticket </h2>
+          <h2 class="text-2xl font-bold">P-Ticket </h2>
         </div>
       </div>
       <div class="navbar-center lg:flex">
@@ -44,7 +44,8 @@
           <p class="mb-5 text-sm">Yes, you can run unit tests and view the results directly within the app. The
             integrated
             testing features allow for a streamlined .</p>
-          <a class="button-link inline-block px-10 py-6 bg-[#1DD100] rounded-lg" href="#Flix-poribohon">Buy Tickets</a>
+          <a class="button-link btn bg-[#1DD100]
+           rounded-lg" href="#P Paribahan">Buy Tickets</a>
         </div>
       </div>
     </div>
@@ -75,7 +76,7 @@
   </header>
   <main>
     <!-- best offer section -->
-    <section class="my-24 mx-auto">
+    <section id="coupon-section" class="my-24 mx-auto">
       <!-- coupon section -->
       <h2 class="text-center text-3xl my-8">Best Offers for You</h2>
       <div class="flex gap-6 max-w-4xl max-h-xl items-center justify-center mx-auto text-center">
@@ -118,8 +119,8 @@
       <div class="text-center mt-8"><button class=" mx-auto btn justify-center items-center text-green-600">See All
           Offers</button></div>
     </section>
-    <!-- Flix Poribohon -->
-    <section id="P-poribohon" class="my-24 mx-auto">
+    <!-- P Poribohon -->
+    <section id="poribahan-section" class="my-24 mx-auto">
 
       <h2 class="text-center text-3xl pb-6">P Paribahan</h2>
       <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated
@@ -180,7 +181,7 @@
     <!-- seats section -->
 
     <!-- select seat 1st part -->
-    <section class="my-24 mx-auto">
+    <section id="seats-section" class="my-24 mx-auto">
       <div class="lg:px-24 px-8 py-8
       
       space-x-24 grid grid-cols-1 lg:grid-cols-3">
@@ -219,7 +220,7 @@
           </div>
 
         </div>
-            <!-- select seat 2nd part -->
+        <!-- select seat 2nd part -->
         <div class="pl-24 pr-0 space-x-4">
           <h3 class="text-center text-3xl pb-8 font-bold">Select Your Seat</h3>
           <div id="seat-container" class=" bg-gray-50">
@@ -253,7 +254,8 @@
           </div>
           <div class="join w-96 bg-base-50">
             <input id="coupon-code" class="input input-bordered join-item" placeholder="Have Any Coupon" />
-            <button onclick="updateGrandTotal('apply-btn')" id="apply-btn" class="btn w-fit join-item bg-[#1DD100] rounded">Apply</button><br><br>
+            <button onclick="updateGrandTotal('apply-btn')" id="apply-btn"
+              class="btn w-fit join-item bg-[#1DD100] rounded">Apply</button><br><br>
           </div>
           <div class="flex space-x-20 bg-base-50">
             <p class="text-xl font-lg">Grand Total</p><span class="text-xl font-lg"><span
@@ -274,7 +276,7 @@
             <input type="email" placeholder="Enter Your Email Id"
               class="input input-bordered input-primary w-full max-w-xs"><br>
           </div><br>
-          <button class="btn w-80 px-8 bg-[#1DD100]">Next</button>
+          <button onclick="next()" class="btn w-80 px-8 bg-[#1DD100]">Next</button>
           <br>
 
           <div class="flex space-x-16">
@@ -287,14 +289,34 @@
       </div>
 
     </section>
+    <section id="final-section">
+      <!-- success section -->
+      <div class="container mx-auto my-48 border-4 bg-gray-50 w-8/12 h-1/2">
+        <div
+          class="mx-auto text-center items-center justify-center pt-32 border-1 bg-sky-50 w-[700px] h-[430px] my-16 space-y-4">
+          <div class="flex justify-center -mt-8">
+            <img src="images/Group.svg" alt="">
+          </div>
+
+          <h1 class="text-2xl font-bold text-[#27AE60]">SUCCESS</h1>
+          <p class="text-sm font-bold">Thank you for Booking Our Bus Seats. <br>
+            We are working hard to find the best service and deals for you. </p>
+          <p class="text-sm"> Shortly you will find a confirmation in your email.</p>
+
+          <button onclick="show()" class="btn rounded-full bg-[#27AE60] w-48">Continue</button>
+
+        </div>
+
+      </div>
+    </section>
 
 
   </main>
-  <footer>
+  <footer id="footer-section">
     <!-- footer section -->
     <footer class="footer p-10 bg-neutral text-neutral-content border-2 w-11/12 ml-24 mr-24 pt-16">
       <nav>
-        <h6 class="footer-title">Flix-Ticket</h6>
+        <h6 class="footer-title">P-Ticket</h6>
         <p>P-Ticket
           P-Ticket is a digital platform to make your daily commuting better.</p>
         <a class="link link-hover">Design</a>

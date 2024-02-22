@@ -81,9 +81,6 @@ function updateGrandTotal(value) {
 
 
 
-
-
-
 function updateTotalPrice(value) {
     // console.log(value);
     const totalPrice = getConvertedValue('total-price');
@@ -98,3 +95,56 @@ function getConvertedValue(id) {
     const convertPrice = parseInt(price);
     return convertPrice
 }
+
+function next(){
+    const headerSection = document.getElementById('header-section');
+    headerSection.classList.add('hidden');
+
+    const couponSection = document.getElementById('coupon-section');
+    couponSection.classList.add('hidden');
+
+    const poribahanSection = document.getElementById('poribahan-section');
+    poribahanSection.classList.add('hidden');
+
+    const seatsSection = document.getElementById('seats-section');
+    seatsSection.classList.add('hidden');
+
+    const footerSection = document.getElementById('footer-section');
+    footerSection.classList.add('hidden');
+
+    const finalSection = document.getElementById('final-section');
+    finalSection.classList.remove('hidden');
+   
+   
+   
+}
+
+
+
+function show(){
+    
+    const headerSection = document.getElementById('header-section');
+    headerSection.classList.remove('hidden');
+
+    const couponSection = document.getElementById('coupon-section');
+    couponSection.classList.remove('hidden');
+
+    const poribahanSection = document.getElementById('poribahan-section');
+    poribahanSection.classList.remove('hidden');
+
+    const seatsSection = document.getElementById('seats-section');
+    seatsSection.classList.remove('hidden');
+
+    const footerSection = document.getElementById('footer-section');
+    footerSection.classList.remove('hidden');
+
+    const finalSection = document.getElementById('final-section');
+    finalSection.classList.add('hidden');
+    
+}
+
+
+
+
+
+    
