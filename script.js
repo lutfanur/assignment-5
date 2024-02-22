@@ -10,13 +10,13 @@ for (const btn of allBtn) {
         const seatName = event.target.innerText;
         const className = event.target.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes[3].childNodes[5].childNodes[3].innerText;
         const price = event.target.parentNode.parentNode.parentNode.parentNode.childNodes[5].childNodes[3].childNodes[5].childNodes[5].innerText;
-        
+
 
         const seatBooking = document.getElementById('seat-booking');
 
 
         const firstSeatCount = getConvertedValue('seat-count');
-        if(firstSeatCount + 1 > 4){
+        if (firstSeatCount + 1 > 4) {
             alert('only for 4 seats');
             return;
         }
@@ -26,15 +26,11 @@ for (const btn of allBtn) {
 
 
         const div = document.createElement('div');
-        div.classList.add('flex');
-
-        div.classList.add('flex-row');
         div.classList.add('gap-24');
-
-
-        div.classList.add('items-center');
-
-
+        div.classList.add('flex');
+        div.classList.add('py-4');
+        div.classList.add('pl-12');
+       
         const p = document.createElement('p');
         p.innerText = seatName;
         const p1 = document.createElement('p');
@@ -96,7 +92,7 @@ function getConvertedValue(id) {
     return convertPrice
 }
 
-function next(){
+function next() {
     const headerSection = document.getElementById('header-section');
     headerSection.classList.add('hidden');
 
@@ -114,15 +110,15 @@ function next(){
 
     const finalSection = document.getElementById('final-section');
     finalSection.classList.remove('hidden');
-   
-   
-   
+
+
+
 }
 
 
 
-function show(){
-    
+function show() {
+
     const headerSection = document.getElementById('header-section');
     headerSection.classList.remove('hidden');
 
@@ -140,11 +136,10 @@ function show(){
 
     const finalSection = document.getElementById('final-section');
     finalSection.classList.add('hidden');
-    
+
 }
 
 
 
 
 
-    
